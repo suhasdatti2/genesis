@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="preload" as="image" href="assets/frames/frame_001.jpg" />
+<link rel="preload" as="image" href="images/frame_001.jpg" />
 
 <style>
 /* ============================================================
@@ -333,7 +333,7 @@ footer { border-top: 1px solid var(--border); padding: 70px 0 40px; background: 
 <!-- ================= HERO ================= -->
 <header class="hero" id="top">
   <div class="hero-bg" id="heroBg" aria-hidden="true">
-    <img src="assets/frames/frame_001.jpg" alt="" fetchpriority="high" />
+    <img src="images/frame_001.jpg" alt="" fetchpriority="high" />
   </div>
   <div class="container">
     <div class="hero-inner" id="heroInner">
@@ -421,7 +421,7 @@ footer { border-top: 1px solid var(--border); padding: 70px 0 40px; background: 
     <!-- the component. Property controls live in JS: images[] + frameHeight -->
     <div class="seq reveal" id="genesisEngine" role="img"
          aria-label="Scroll-driven cinematic sequence of a surreal world with floating islands forming above a field of flowers">
-      <img class="seq__img" id="seqImg" src="assets/frames/frame_001.jpg" alt="" decoding="async" />
+      <img class="seq__img" id="seqImg" src="images/frame_001.jpg" alt="" decoding="async" />
       <div class="seq__overlay" aria-hidden="true"></div>
       <div class="seq__rail" aria-hidden="true"><i id="seqRail"></i></div>
       <div class="seq__ui" aria-hidden="true">
@@ -465,7 +465,7 @@ footer { border-top: 1px solid var(--border); padding: 70px 0 40px; background: 
       </ul>
     </div>
     <div class="about-visual reveal" data-cursor>
-      <img src="assets/frames/frame_040.jpg" alt="A lone figure standing in a field of daisies beneath floating islands" loading="lazy" />
+      <img src="images/frame_040.jpg" alt="A lone figure standing in a field of daisies beneath floating islands" loading="lazy" />
     </div>
   </div>
 </section>
@@ -543,7 +543,7 @@ footer { border-top: 1px solid var(--border); padding: 70px 0 40px; background: 
 <section class="contact" id="contact">
   <div class="container">
     <div class="contact-wrap reveal">
-      <img class="bg" src="assets/frames/frame_055.jpg" alt="" loading="lazy" aria-hidden="true" />
+      <img class="bg" src="images/frame_055.jpg" alt="" loading="lazy" aria-hidden="true" />
       <span class="eyebrow">Let's build</span>
       <h2>Ready to ship something <span class="grad-text">unforgettable</span>?</h2>
       <p>Tell us about your project. We reply within one business day — no bots, no sales scripts.</p>
@@ -755,7 +755,7 @@ footer { border-top: 1px solid var(--border); padding: 70px 0 40px; background: 
   initImageSequence({
     mount: "#genesisEngine",
     images: Array.from({ length: 65 }, (_, i) =>
-      "assets/frames/frame_" + String(i + 1).padStart(3, "0") + ".jpg"),
+      "images/frame_" + String(i + 1).padStart(3, "0") + ".jpg"),
     frameHeight: 640,   // visible height of the component
     scrollLength: 7     // internal scroll travel = height × 7
   });
